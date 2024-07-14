@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">City WeatherPro</string>
+    <string name="stay_informed_rain_or_shine_nyour_city_our_app">Stay informed, rain or shine.\nyour city, our app.</string>
+    <string name="_22_jan_2025">dd MMM yyyy</string>
+    <string name="monday">Day</string>
+    <string name="sunny">Weather</string>
+    <string name="_00_00_c">00°C</string>
+    <string name="_00_00_f">/ 00°F</string>
+    <string name="AR_rate">That\'s Great to Here You Are Satisfied With the product. Would you like to Rate Us on Play Store.</string>
+    <string name="AR_share_text">Are you bored from typing and repeating text again and again? Then, we are here for you. \n \n</string>
+    <string name="AR_rating_good">Thank you For Good Rating</string>
+    <string name="AR_rating">Thank you For Rating</string>
+    <string name="today">Today</string>
+    <string name="designed_by_nalphaone_infotech">Designed by\nAlphaOne Infotech</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="exit_app">Exit App</string>
+    <string name="do_you_wants_to_exit_the_app">Do you wants to exit the App?</string>
+    <string name="confirm_exit">Confirm Exit</string>
+    <string name="submit">Submit</string>
+    <string name="share_app">Share App</string>
+    <string name="appOpnAd">ca-app-pub-3940256099942544/9257395921</string>
+    <string name="min_00_00_c">Min : 00 °C</string>
+    <string name="max_00_00_c">Max : 00 °C</string>
+    <string name="sea_level">Sea level</string>
+    <string name="_0000_hpa">0000 hPa</string>
+</resources>

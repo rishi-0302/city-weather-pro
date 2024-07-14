@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rate_us">Rate Us</string>
+    <string name="exit_app">Exit App</string>
+    <string name="do_you_wants_to_exit_the_app">Do you wants to exit the App?</string>
+    <string name="confirm_exit">Confirm Exit</string>
+    <string name="AR_rate">That\'s Great to Here You Are Satisfied \n With the product. Would you like to\n Rate Us on Play Store.</string>
+    <string name="submit">Submit</string>
+    <string name="share_app">Share App</string>
+    <string name="appOpnAd">ca-app-pub-3940256099942544/9257395921</string>
+
+</resources>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/topAr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/pqrs"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-22dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ar_rateus_line"
+            android:orientation="vertical"
+            android:padding="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/pqrs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/ar_dialog_bg"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/ArBclose"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:layout_marginBottom="-30dp"
+                android:background="@drawable/ar_bg_riple_white_rectangle_rate"
+                android:padding="13dp"
+                android:src="@drawable/close" />
+
+            <ImageView
+                android:id="@+id/logo_dialog"
+                android:layout_width="200dp"
+                android:layout_height="125dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/badge" />
+
+            <RelativeLayout
+                android:id="@+id/text1update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo_dialog"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="300sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/rate_us"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="350sp"
+                    android:maxLines="4"
+                    android:ellipsize="end"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt1"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/AR_rate"
+                    android:textColor="#585858"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ratingBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1update"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/rate_1star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/starselected" />
+
+
+                <ImageView
+                    android:id="@+id/rate_2star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/starselected" />
+
+                <ImageView
+                    android:id="@+id/rate_3star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/starselected" />
+
+                <ImageView
+                    android:id="@+id/rate_4star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/starunfilled" />
+
+                <ImageView
+                    android:id="@+id/rate_5star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/starunfilled" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dialogview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingBar"
+                android:layout_marginTop="1dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:id="@+id/aaa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/dialog_conform_btn_share"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="7.5dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardBackgroundColor="#EBEBEB"
+                        app:cardCornerRadius="8dp">
+
+                        <Button
+                            android:id="@+id/ArBtnShare"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ar_bg_riple_white_rectangle_rate"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:singleLine="true"
+                            android:text="@string/share_app"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="#676767"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/dialog_conform_btn_rateus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="7.5dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardBackgroundColor="#34013C"
+                        app:cardCornerRadius="8dp">
+
+                        <Button
+                            android:id="@+id/ArBtnRate"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ar_bg_riple_white_rectangle_rate"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:singleLine="true"
+                            android:text="@string/submit"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
